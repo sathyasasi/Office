@@ -98,7 +98,7 @@ function start(cb) {
       });
       require("./route")(app);
 
-      app.listen(process.env.PORT || 8080, function (err) {
+      app.listen(process.env.PORT || 8000, function (err) {
         log.info(" %s listening at %s", app.name, app.url);
         cb(err);
       });
